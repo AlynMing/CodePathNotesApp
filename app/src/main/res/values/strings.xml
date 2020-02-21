@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Flashcards</string>
+    <string name="quest">The Yuan Dynasty came from the invasion of:</string>
+    <string name="ans">The Mongol Khanate</string>
+    <string name="Manchu">The Manchu</string>
+    <string name="Mongols">The Mongol Khanate</string>
+    <string name="Xiongnu">The Xiongnu Confederacy</string>
+    <string name="Jin">The Jin Dynasty</string>
+    <string name="Toggle1">Hide Choices</string>
+    <string name="Toggle2">Show Choices</string>
+</resources>
