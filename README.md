@@ -7,7 +7,7 @@ The objective of this lab was to create a function that could create an addition
 
 ### App Walk-though
 
-http://g.recordit.co/m6vMhd37Dw.gif
+<img src="http://g.recordit.co/m6vMhd37Dw.gif" width=200><br>
 
 ## Required
 - [x] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
