@@ -71,6 +71,7 @@
         android:text="@string/Jin"
         android:textSize="18sp" />
 
+    <!--
     <Button
         android:id="@+id/Viewer"
         android:layout_width="150dip"
@@ -79,5 +80,36 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50sp"
         android:text="@string/Toggle1" />
+        -->
+
+
+
+    <ImageView
+        android:id="@+id/addcard"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="9dp"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <ImageView
+        android:id="@+id/hiddenEye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25sp"
+        app:srcCompat="@mipmap/eyeout_round" />
+
+    <ImageView
+        android:id="@+id/shownEye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8sp"
+        app:srcCompat="@mipmap/eyeappear" />
 
 </RelativeLayout>
