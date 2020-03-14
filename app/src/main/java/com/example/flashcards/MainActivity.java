@@ -9,19 +9,26 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     static int state = 0;
     static int ansSpace = 0;
     static int ansToggle = 1;
-    static int changeToggle = 0;
+    int cardPos = 0;
     String[] strEdit;
+    FlashcardDatabase flashcardDatabase;
+    List<Flashcard> allFlashcards;
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
                 strEdit = data.getStringArrayExtra("flash");
+
+                flashcardDatabase.insertCard(new Flashcard(strEdit[0], strEdit[1]));
+                allFlashcards = flashcardDatabase.getAllCards();
 
                 ((TextView) findViewById(R.id.Question)).setText(strEdit[0]);
                 ((TextView) findViewById(R.id.Answer)).setText(strEdit[1]);
@@ -39,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        flashcardDatabase = new FlashcardDatabase(getApplicationContext());
+        allFlashcards = flashcardDatabase.getAllCards();
+
         findViewById(R.id.hiddenEye).setVisibility(View.VISIBLE);
         findViewById(R.id.shownEye).setVisibility(View.GONE);
 
@@ -49,6 +59,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivityForResult(intent, 1);
 
+            }
+        });
+
+        findViewById(R.id.nextCard).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (allFlashcards != null && allFlashcards.size() > 0) {
+                    cardPos++;
+
+                    if (cardPos == allFlashcards.size()) {
+                        cardPos = 0;
+                    }
+
+                    ((TextView) findViewById(R.id.Question)).setText
+                            (allFlashcards.get(cardPos).getQuestion());
+                    ((TextView) findViewById(R.id.Answer)).setText
+                            (allFlashcards.get(cardPos).getAnswer());
+                }
             }
         });
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/basic"
     android:id="@+id/rootView"
     tools:context=".MainActivity">
 
@@ -111,5 +112,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8sp"
         app:srcCompat="@mipmap/eyeappear" />
+
+    <ImageView
+        android:id="@+id/nextCard"
+        android:layout_width="52dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="251dp"
+        app:srcCompat="@android:drawable/ic_media_play" />
 
 </RelativeLayout>
