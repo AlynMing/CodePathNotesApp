@@ -1,5 +1,27 @@
 ## NoteCards
 
+## Lab 4
+
+### App Description
+The objective of this lab is to add animations to our notecard application that operate on every transition between different
+screen
+
+### App Walk-though
+When a new card is created, the application is supposed to animate a sliding transition to another screen. Upon returning, the transition screen should also be replicated. A logo was for the application launcher was added in the Android Manifest XML. When the card is flipped, an expanding circle about the center of the field should lead the trasition. When the user goes to the next card, the old card leaves from the left first, and a new card enters in from the right.
+
+<img src="http://g.recordit.co/2GeLnaKrMG.gif" width=200><br>
+
+## Required
+- [x] User sees a transition animation when going from the main screen to the add card screen.
+- [x] User sees a reveal animation when the flashcard is tapped and the answer is shown
+- [x] User sees flashcards animating in / out when the 'next' button is tapped
+
+## Optional
+- [x] Extra styling is added!
+- [ ] User sees a countdown timer for each question
+- [ ] User sees a 'card flip' animation when the card is tapped
+- [ ] User sees a celebration animation with confetti when they answer a question correctly
+
 ## Lab 3
 
 ### App Description
