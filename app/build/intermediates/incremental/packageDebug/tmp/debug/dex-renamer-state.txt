@@ -1,4 +1,4 @@
-#Sat Mar 14 02:37:38 EDT 2020
+#Sat Mar 28 00:04:14 EDT 2020
 base.0=C\:\\Users\\wheel\\AndroidStudioProjects\\Flashcards2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

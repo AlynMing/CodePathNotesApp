@@ -15,6 +15,8 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim left_out
+anim right_in
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -672,6 +674,7 @@ color mtrl_textinput_default_box_stroke_color
 color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_hovered_box_stroke_color
+color notes_background
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary_dark_material_dark
@@ -1013,6 +1016,7 @@ drawable ic_mtrl_chip_close_circle
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable notes_foreground
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1322,6 +1326,8 @@ mipmap eyeout
 mipmap eyeout_round
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap notes
+mipmap notes_round
 string Jin
 string Manchu
 string Mongols
